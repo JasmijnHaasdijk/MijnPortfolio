@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/6e4f3da2ae.js" crossorigin="anonymous"></script>
+    <title>Portfolio website van Jasmijn</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hi, I'm <span>Jasmijn </span><br>Haasdijk</h1>
+            </div>
+        </div>
+    </div>
+   <!---------About me---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_1269.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Mijn naam is Jasmijn Haasdijk en zit momenteel in mijn laatste jaar van de opleiding
+                        software development. De afgelopen jaren heb ik mij voornamelijk gespecialiseerd tot 
+                        Front end developer. Op dit moment ben ik bezig om een mooi portfolio voor mijzelf te creeren,
+                        om deze te kunnen tonen. Mijn projecten zullen hierop komen te staan zodat je een indruk hebt van mijn kwaliteiten.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link onclick=" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software developer</span><br>Designing webapplications</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Juli 2022 - now</span><br>Gastvrouw at Van der Valk Voorschoten</li>
+                            <li><span>Mei 2022 - September 2022</span><br>Runnertrainer at Picnic Technologies</li>
+                            <li><span>November 2021 - September 2022</span><br>Runner at Picnic Technologies</li>
+                            <li><span>Augustus 2021 - Januari 2022</span><br>Internship front end development at Dutch innovation factory</li>
+                            <li><span>Juli 2021 - Januari 2022</span><br>Gastvrouw at Van der Valk Apeldoorn</li>
+                            <li><span>Januari 2018 - September 2021</span><br>Vakkenvuller at Dirk Leidschenveen</li>
+                            <li><span>April 2021 - Mei 2021</span><br>Verkoopmedewerker at Mediamarkt Leidschendam</li>
+                            <li><span>December 2019 - Juni 2020</span><br>Kassamedewerker at Jumbo Nootdorp</li>
+                            <li><span>April 2019 - Juli 2019</span><br>Verkoopmedewerker at Bakker Ammerlaan Nootdorp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2020 - 2023</span><br>Software development at MboRijnland</li>
+                            <li><span>2019 - 2020</span><br>Verpleegkunde at MboRijnland</li>
+                            <li><span>2015 - 2019</span><br>Mavo at Montaigne Lyceum, Den Haag</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined">code</span> 
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">crop</span>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">home_app_logo</span>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot 2022-10-12 at 12.30.48.png">
+                    <div class="layer">
+                        <h3>De haarwinkel</h3>
+                        <p>Een webshop in opdracht van De Haarwinkel. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/asia-culturecenter-YgFUJ4Ef2EY-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Dit is mijn social media</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/asia-culturecenter-YgFUJ4Ef2EY-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Dit is mijn social media</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>Jasmijnhaasdijk@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i>06-81614470</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jasmijn-haasdijk-595a141aa/"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/JasmijnHaasdijk"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Curriculum Vitae Jasmijn Haasdijk copy.pdf" dowload class="btn btn2">Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvzoegr" method="post">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Your Email" required="">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>Copyright Jasmijn Haasdijk made with love <i class="fas fa-heart"></i></p> 
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
